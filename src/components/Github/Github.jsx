@@ -13,9 +13,14 @@ const Github = () => {
   //  })
   // }, [])
   return (
-    <div className="text-center m-4 bg-gray-600 text-white p-4 text-3xl">
+    <div className="flex flex-col justify-center text-center m-4 bg-gray-600 text-white p-4 text-3xl">
       Github followers: {data.followers}
-      <img src={data.avatar_url} alt="Git picture" width={300} />
+      <img
+        className="m-auto pt-2"
+        src={data.avatar_url}
+        alt="Git picture"
+        width={300}
+      />
     </div>
   );
 };
